@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload </title>
+    <style>
+        body{
+            background-color: rgb(206, 209, 174);
+        }
+
+        form{
+            margin: 20%;
+            position:relative;
+            background-color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+<form action="/" method="post" enctype="multipart/form-data">
+    <input type="file" value="upload" name='upload'>
+    <button type="submit"> Submit   </button>
+    {% if upload_success %}
+<h1> Upload success </h1>
+{% endif%}
+</form>
+
+</div>
+</body>
+</html>
